@@ -6,13 +6,13 @@ GRID_BUTTON.addEventListener("click", () => askSize());
 
 function askSize() {
   let customSize = parseInt(
-    prompt("Enter size of grid, maximum 100 squares.", "16")
+    prompt("Enter size of grid, maximum 64 squares.", "16")
   );
   createNewGrid(customSize);
 }
 
 function createNewGrid(size) {
-  if (size > 100 || isNaN(size) || size < 1) {
+  if (size > 64 || isNaN(size) || size < 1) {
     askSize();
   } else {
     GRID_CONTAINER.textContent = "";
