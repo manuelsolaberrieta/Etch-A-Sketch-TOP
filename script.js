@@ -17,18 +17,16 @@ function createNewGrid(size) {
   } else {
     GRID_CONTAINER.textContent = "";
     let width_height = GRID_CONTAINER_WIDTH / size;
-    for (let i = 0; i < size; i++) {
-      for (let j = 0; j < size; j++) {
-        let div = document.createElement("div");
-        div.classList.toggle("grid-div");
-        div.setAttribute(
-          "style",
-          `height:${width_height}px; width:${width_height}px;`
-        );
-        div.addEventListener("mouseover", addPaint);
-        div.addEventListener("mousedown", addPaint);
-        GRID_CONTAINER.appendChild(div);
-      }
+    for (let i = 0; i < size * size; i++) {
+      let div = document.createElement("div");
+      div.classList.toggle("grid-div");
+      div.setAttribute(
+        "style",
+        `height:${width_height}px; width:${width_height}px;`
+      );
+      div.addEventListener("mouseover", addPaint);
+      div.addEventListener("mousedown", addPaint);
+      GRID_CONTAINER.appendChild(div);
     }
   }
 }
