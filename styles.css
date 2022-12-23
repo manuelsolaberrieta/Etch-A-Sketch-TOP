@@ -8,6 +8,7 @@
   margin: auto;
   margin-top: 5vh;
   width: 320px;
+  border: 20px solid darkblue;
 }
 .grid-div {
   height: 20px;
