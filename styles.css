@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 5vh;
+  width: 320px;
+}
+.grid-div {
+  height: 20px;
+  width: 20px;
+  background-color: gray;
+}
+.grid-div:hover {
+  background-color: white;
+}
+.grid-div-painted {
+  background-color: black;
+}
+#choose-grid {
+  display: block;
+  margin: auto;
+  margin-top: 5vh;
+  padding: 15px;
+}
